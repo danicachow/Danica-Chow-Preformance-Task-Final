@@ -13,5 +13,8 @@ script = ExtResource("1_2i8qy")
 texture = ExtResource("1_xg8s6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 9)
 shape = SubResource("CircleShape2D_kxk5a")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

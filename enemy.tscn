@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_dsgw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wqse"]
-size = Vector2(744, 1011)
+size = Vector2(679, 1011)
 
 [node name="enemy" type="RigidBody2D"]
 gravity_scale = 2.66454e-15
@@ -12,5 +12,6 @@ gravity_scale = 2.66454e-15
 texture = ExtResource("1_dsgw1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-11, 2.5)
+visible = false
+position = Vector2(1, 10)
 shape = SubResource("RectangleShape2D_2wqse")
